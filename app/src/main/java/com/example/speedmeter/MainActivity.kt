@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         textView = findViewById<View>(R.id.speed) as TextView
 
+        animationView2.setNumberState("OctaState2", "progress", progress1)
+        animationView2.setNumberState("OctaState", "progress", progress1)
         animationView2.setNumberState("LeftState", "progress", progress1)
         animationView2.setNumberState("LeftBottom", "progress", progress1)
 
@@ -51,6 +53,8 @@ class MainActivity : AppCompatActivity() {
                                 progress1 = progress1 + 1
                                     textView!!.text= progress1.toInt().toString()
 //                                    animationView2.setNumberState("State Machine 1", "progress", progress1)
+                                    animationView2.setNumberState("OctaState2", "progress", progress1)
+                                    animationView2.setNumberState("OctaState", "progress", progress1)
                                     animationView2.setNumberState("LeftBottom", "progress", progress1)
                                 animationView2.setNumberState("RightState", "progress", progress1)
                                     animationView2.setNumberState("LeftState", "progress", progress1)
@@ -79,6 +83,8 @@ class MainActivity : AppCompatActivity() {
                                 progress1 = progress1 - 1
                                 textView!!.text= progress1.toInt().toString()
 //                                animationView2.setNumberState("State Machine 1", "progress", progress1)
+                                animationView2.setNumberState("OctaState2", "progress", progress1)
+                                animationView2.setNumberState("OctaState", "progress", progress1)
                                 animationView2.setNumberState("RightState", "progress", progress1)
                                 animationView2.setNumberState("LeftBottom", "progress", progress1)
                                 animationView2.setNumberState("LeftState", "progress", progress1)
